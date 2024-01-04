@@ -11,7 +11,7 @@ def json():
     if request.method == 'GET':
         query = []
         query = [request.values.get('query')]
-        print(os.path)
+        print(query)
         result = Gmaps.places(query)
         if os.path.isdir("output/" + query[0]):
             shutil.rmtree("output/" + query[0])
