@@ -5,3 +5,4 @@ casefy
 lxml
 regex
 botasaurus
+Flask
