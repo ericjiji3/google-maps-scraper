@@ -6,3 +6,4 @@ lxml
 regex
 botasaurus
 Flask
+selenium
