@@ -7,3 +7,4 @@ regex
 botasaurus
 Flask
 selenium
+waitress
