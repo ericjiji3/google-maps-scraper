@@ -7,14 +7,14 @@ app = Flask(__name__)
 
 @app.route("/", methods=['GET', 'POST'])
 def json():
-    if request.method == 'GET':
-        query = []
-        query = [request.values.get('query')]
-        print(query)
-        result = Gmaps.places(query)
-        if os.path.isdir("output/" + query[0]):
-            shutil.rmtree("output/" + query[0])
-        return result
+    # if request.method == 'GET':
+    #     query = []
+    #     query = [request.values.get('query')]
+    #     print(query)
+    #     result = Gmaps.places(query)
+    #     if os.path.isdir("output/" + query[0]):
+    #         shutil.rmtree("output/" + query[0])
+    #     return result
     return render_template('main.html')
 
 @app.route("/background_process", methods=['GET', 'POST'])
