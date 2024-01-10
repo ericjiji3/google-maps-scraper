@@ -3,7 +3,6 @@ from flask import Flask, render_template, Response, request, redirect, url_for, 
 import os, shutil
 
 app = Flask(__name__)
-love_it_star_it = '''Love It? Star It! ⭐ https://github.com/omkarcloud/google-maps-scraper/'''
 
 
 @app.route("/", methods=['GET', 'POST'])
